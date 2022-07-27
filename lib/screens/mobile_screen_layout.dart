@@ -12,6 +12,8 @@ class MobileScreenLayout extends StatelessWidget {
         length: 3,
         child: Scaffold(
           appBar: AppBar(
+            elevation: 0,
+            backgroundColor: appBarColor,
             title: const Text(
               "Whatsapp",
               style: TextStyle(
@@ -47,7 +49,7 @@ class MobileScreenLayout extends StatelessWidget {
                   Tab(text: "STATUS"),
                   Tab(text: "CALLS"),
                 ]),
-          ), 
+          ),
           body: const ContactList(),
         ));
   }
